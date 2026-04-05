@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function type(tpe){
+            if(typeof tpe=='number') return typeof tpe;
+            else if(typeof tpe=='string') return typeof tpe;
+            else if(Array.isArray(tpe)) return 'array';
+            else if(tpe===null) return 'null';
+            else if(tpe===undefined) return 'undefined';
+            else if(typeof tpe=="function") return typeof tpe;
+            else return 'object';
+        }
+        console.log(type(function(){}));
+  
+        
+      
+        
+        
+    </script>
+</body>
+</html>
